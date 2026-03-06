@@ -151,7 +151,7 @@ index 5ead2f154..e5ff68860 100644
 +}
 +
 +bool DeviceRequiresTXMWorkaround() {
-+    if(__builtin_available(iOS 19.0, *)) {
++    if(false) {
 +        DIR *d = opendir("/private/preboot");
 +        if(!d) return false;
 +        struct dirent *dir;
